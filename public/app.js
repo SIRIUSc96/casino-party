@@ -42,6 +42,15 @@ const params = new URLSearchParams(location.search);
 const urlRoom = (params.get('room') || '').toUpperCase().slice(0, 4);
 $('#name').value = ls.get('dfg_name') || '';
 if (urlRoom) $('#code').value = urlRoom;
+// 招待URL(?room=XXXX)で来た人は入室画面、それ以外は部屋作成画面だけを出す（入室は招待制）
+if (urlRoom) {
+  $('#btn-create').classList.add('hidden');
+  $('.or').textContent = '招待されたルームに入ります';
+  $('#code').readOnly = true;
+} else {
+  $('.or').classList.add('hidden');
+  $('#home-msg').previousElementSibling.classList.add('hidden');
+}
 
 // ---------- 通信 ----------
 function toast(msg) {
