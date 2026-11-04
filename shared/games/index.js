@@ -9,8 +9,9 @@ import * as roulette from './roulette.js';
 import * as sicbo from './sicbo.js';
 import * as slots from './slots.js';
 import * as chinchiro from './chinchiro.js';
+import * as yacht from './yacht.js';
 
-export const GAMES = { daifugo, sevens, babanuki, shinkei, blackjack, doubt, roulette, sicbo, slots, chinchiro };
+export const GAMES = { daifugo, sevens, babanuki, shinkei, blackjack, doubt, roulette, sicbo, slots, chinchiro, yacht };
 export const GAME_IDS = Object.keys(GAMES);
 
 export const defaultsOf = (meta) => Object.fromEntries(meta.schema.map((f) => [f.k, f.def]));

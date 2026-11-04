@@ -244,3 +244,15 @@ table.res th.num, table.res td.num { text-align: right; }
 .mutebtn { top: auto; bottom: 12px; right: 12px; }
 .tablebox.casino .who { margin: 0 0 4px; }
 .confetti { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 60; }
+/* ヨット */
+.die.yd { background: none; border: 2px solid transparent; border-radius: 12px; cursor: pointer; padding: 0 2px; font-family: inherit; }
+.die.yd:disabled { cursor: default; opacity: 1; color: #fff; }
+.die.yd.held { border-color: var(--accent); background: #ffffff1c; }
+.ytable { overflow-x: auto; }
+.ytable table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.ytable th, .ytable td { padding: 4px 6px; text-align: center; border-bottom: 1px solid #ffffff14; }
+.ytable th:first-child { text-align: left; font-weight: 600; white-space: nowrap; }
+.ytable thead th, .ytable tr:first-child th { color: var(--muted); }
+.ytable th.cur { color: var(--accent); } .ytable th.me { text-decoration: underline; }
+.ytable td.done { font-weight: 700; } .ytable td.pick { background: #ffffff1a; color: var(--accent); font-weight: 800; cursor: pointer; }
+.ytable tr.tot td, .ytable tr.tot th { font-weight: 800; color: var(--accent); }
