@@ -11,10 +11,11 @@ import * as sicboUI from '/games/sicbo.js';
 import * as slotsUI from '/games/slots.js';
 import * as chinchiroUI from '/games/chinchiro.js';
 import * as yachtUI from '/games/yacht.js';
+import * as diceUI from '/games/dice.js';
 import { sfx } from '/sfx.js';
 import { confetti } from '/celebrate.js';
 
-const UI = { daifugo: daifugoUI, sevens: sevensUI, babanuki: babanukiUI, shinkei: shinkeiUI, blackjack: blackjackUI, doubt: doubtUI, roulette: rouletteUI, sicbo: sicboUI, slots: slotsUI, chinchiro: chinchiroUI, yacht: yachtUI };
+const UI = { daifugo: daifugoUI, sevens: sevensUI, babanuki: babanukiUI, shinkei: shinkeiUI, blackjack: blackjackUI, doubt: doubtUI, roulette: rouletteUI, sicbo: sicboUI, slots: slotsUI, chinchiro: chinchiroUI, yacht: yachtUI, dice: diceUI };
 const CATS = { card: '♠ トランプ', casino: '🎰 カジノ' };
 
 const $ = (s) => document.querySelector(s);
